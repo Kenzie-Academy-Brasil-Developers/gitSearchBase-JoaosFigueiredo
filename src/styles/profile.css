@@ -1,0 +1,117 @@
+* {
+    font-family: var(--font-primary);
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    outline: none;
+    line-height: 150%;
+    color: var(--color-grey-7);
+}
+
+body {
+    background-color: var(--color-grey-2);
+}
+
+.profileWrapper {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.headerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 0;
+}
+
+.pictureNameWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profilePicture {
+    width: 6rem;
+    border-radius: 3rem;
+    border: solid;
+    border-width: 2px;
+    border-color: var(--color-brand-2);
+}
+
+.profileName {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+}
+
+.changeProfileButton {
+    background-color: var(--color-grey-7-opacity-3);
+    border: none;
+    border-radius: 4px;
+    width: 23%;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.reposWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.58rem;
+}
+
+.repoCard {
+    width: 47%;
+    height: 25vh;
+    border:solid;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: var(--color-grey-3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 3rem;
+}
+
+.repoCard:hover {
+    border-color: var(--color-grey-7);
+    background-color: var(--color-grey-1);
+}
+
+.repoCard:hover .repoUrl {
+    background-color: var(--color-brand-2);
+}
+
+.repoName {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; 
+    width: 65%;
+}
+
+.repoDescription {
+    color: var(--color-grey-7-opacity-4);
+}
+
+.repoUrl {
+    width: 30%;
+    border: solid;
+    border-width: 1.5px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    height: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
