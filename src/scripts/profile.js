@@ -1,5 +1,5 @@
 async function catchProfile () {
-    const profileCatcher = await fetch (`https://api.github.com/users/${localStorage.getItem('userName')}`, {method: 'GET', headers: {'Authorization': 'Bearer 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'}})
+    const profileCatcher = await fetch (`https://api.github.com/users/${localStorage.getItem('userName')}`, {method: 'GET', headers: {'Authorization': 'Bearer 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'}})
     .then(
         response => response.json()
     )
@@ -10,7 +10,7 @@ async function catchProfile () {
 }
 
 async function catchRepos () {
-    const reposCatcher = await fetch (` https://api.github.com/users/${localStorage.getItem('userName')}/repos`, {method: 'GET', headers: {'Authorization': 'Bearer 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'}})
+    const reposCatcher = await fetch (` https://api.github.com/users/${localStorage.getItem('userName')}/repos`, {method: 'GET', headers: {'Authorization': 'Bearer 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'}})
     .then(
         response => response.json()
     )

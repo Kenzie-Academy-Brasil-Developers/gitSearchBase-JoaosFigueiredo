@@ -53,7 +53,7 @@ function renderHomePage () {
 renderHomePage()
 
 async function verifyUser () {
-    const fetchUser = await fetch (`https://api.github.com/users/${localStorage.getItem('userName')}`, {method: 'GET', headers: {'Authorization': 'Bearer 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'}})
+    const fetchUser = await fetch (`https://api.github.com/users/${localStorage.getItem('userName')}`, {method: 'GET', headers: {'Authorization': 'Bearer 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'}})
     .then(
         response => response.json()
     )
